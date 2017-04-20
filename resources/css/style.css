@@ -59,21 +59,29 @@ ul li {
   display: inline;
   padding: 0 1rem;
 }
+.menu {
+  display: block;
+  }
 .short-menu {
   display: none;
 }
 .headline-box {
   display: flex;
+  justify-content: flex-end;
   margin: auto;
   max-width: 960px;
 }
 .headline {
   background-color: white;
-  color: black;
   display: inline-block;
-  line-height: 2.4;
   margin-top: 10rem;
-  padding: 0.75rem 5rem;
+  margin-right: -2rem;
+}
+.headline h1 {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
 }
 .services {
   display: flex;
@@ -132,15 +140,21 @@ footer img {
 }
 @media only screen and (max-width: 1024px) {
   .container,
-  .hdr1,
-  .headline-box,
   .information {
-    max-width: 100%;
   }
   .header {
-    border: solid 1px red;
-    height: 22rem;
-    padding-top: 0em;
-    width: 100%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .menu {
+    display: none;
+    }
+  .short-menu {
+    display: block;
+  }
+  .container,
+  .information {
+  }
+  .header {
   }
 }
