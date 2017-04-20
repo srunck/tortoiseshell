@@ -31,8 +31,8 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 30em;
-  padding-top: 1em;
+  height: 30rem;
+  padding-top: 1rem;
 }
 nav {
   align-items: center;
@@ -128,10 +128,10 @@ ul li {
   width: 10rem;
 }
 footer {
-background-color: azure;
-padding: 4rem 2rem;
-display: flex;
-align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
 }
 footer img {
   height: 1.5rem;
@@ -140,21 +140,35 @@ footer img {
 }
 @media only screen and (max-width: 1024px) {
   .container,
+  .headline-box,
   .information {
+    max-width: 100%;
   }
-  .header {
+  header {
+    height: 22rem;
+    padding-top: 0px;
+  }
+  .headline {
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+  .headline h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
   }
 }
-@media only screen and (max-width: 560px) {
+
+
+
+@media only screen and (max-width: 655px) {
   .menu {
     display: none;
     }
   .short-menu {
     display: block;
   }
-  .container,
-  .information {
-  }
-  .header {
-  }
+  
+
+
+
 }
